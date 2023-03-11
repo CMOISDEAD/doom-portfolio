@@ -1,8 +1,5 @@
 import ReactDOM from "react-dom";
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
 import { Home } from "./pages/Home";
 import { Project } from "./pages/Project";
@@ -12,16 +9,16 @@ import "./index.css";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />
+    element: <Home />,
   },
   {
     path: "/project",
-    element: <Project />
+    element: <Project />,
   },
   {
     path: "/contact",
-    element: <Contact />
-  }
+    element: <Contact />,
+  },
 ]);
 
 ReactDOM.render(

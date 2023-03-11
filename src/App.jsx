@@ -11,7 +11,7 @@ export default function App() {
       <Canvas dpr={[1, 2]} camera={{ position: [0, 0, 10], fov: 22 }}>
         <Bg />
         <Suspense fallback={null}>
-          <Noodles />
+          {/* <Noodles /> */}
           <Rig />
         </Suspense>
       </Canvas>
@@ -51,7 +51,7 @@ function Bg() {
       <boxGeometry args={[1, 1, 1]} />
       <LayerMaterial side={THREE.BackSide}>
         <Depth
-          colorB="darkred"
+          colorB="darkgray"
           colorA="black"
           alpha={1}
           mode="normal"
@@ -66,7 +66,7 @@ function Bg() {
           colorA="white"
           colorB="black"
           mode="subtract"
-          alpha={0.2}
+          alpha={0.5}
         />
       </LayerMaterial>
     </mesh>

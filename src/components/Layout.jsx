@@ -1,6 +1,8 @@
 // import { Outlet } from "react-router-dom"
+import moment from "moment";
 import { Links } from "./Links";
 import { Social } from "./Social";
+import { Timer } from "./Timer";
 
 export const Layout = ({ children }) => {
   return (
@@ -15,36 +17,19 @@ export const Layout = ({ children }) => {
           height: "100%",
         }}
       >
-        <div
-          className="inline-flex gap-2"
-          style={{ position: "absolute", top: 40, left: 40, fontSize: "13px" }}
-        >
-          PORTFOLIO —  <Social />
+        <div className="inline-flex gap-2 absolute top-10 left-10 font-mono text-sm">
+          DOOM5D4Y — <Social />
         </div>
-        <div
-          style={{
-            position: "absolute",
-            bottom: 40,
-            right: 40,
-            fontSize: "13px",
-          }}
-        >
-          {Date.now()}
+        <div className="absolute right-10 bottom-10 font-mono text-sm">
+          Last update {moment("20230311", "YYYYMMDD").fromNow()}
         </div>
-        <div className="absolute top-28 left-12">
+        <div className="absolute top-28 left-11 right-44 special">
           {children}
         </div>
-        <div
-          style={{
-            position: "absolute",
-            bottom: 100,
-            right: 40,
-            fontSize: "13px",
-          }}
-        >
+        <div className="absolute bottom-20 right-10">
           <Links />
         </div>
       </div>
     </>
-  )
-}
+  );
+};

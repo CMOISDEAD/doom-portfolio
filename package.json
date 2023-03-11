@@ -12,9 +12,12 @@
     "@pmndrs/branding": "^0.0.8",
     "@react-three/drei": "^9.56.26",
     "@react-three/fiber": "^8.11.5",
+    "daisyui": "^2.51.3",
     "lamina": "^1.1.23",
+    "moment": "^2.29.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.8.0",
     "react-router-dom": "^6.8.2",
     "three": "^0.150.0"
   },

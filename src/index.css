@@ -7,6 +7,7 @@
 
 * {
   box-sizing: border-box;
+  cursor: none;
 }
 
 @font-face {
@@ -26,7 +27,7 @@ body,
 
 body {
   overscroll-behavior-y: none;
-  background: #1d2021;
+  background: #000000;
   font-family: "Inter var", sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -46,4 +47,15 @@ a {
 
 svg {
   fill: white;
+}
+
+/* cursor */
+#mouse-circle {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  margin: -12px 0 0 -12px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  pointer-events: none;
 }
